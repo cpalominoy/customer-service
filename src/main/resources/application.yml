@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/customer-service
+    username: root
+    password: alfredo**
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
+
+openapi:
+  name: Customer Service
+  version: 1.0.0
+  description: Servicio para la consulta de informacion de los clientes
+
+springdoc:
+  api-docs:
+    path: /api-docs
